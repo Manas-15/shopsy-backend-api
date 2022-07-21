@@ -4,8 +4,12 @@
   "description": "User should be able to register with username and password and upload read write delete the file upload",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
+  "engines": {
+    "node": "16.x"
+  },
+  "keywords": [],
   "author": "sunil",
   "license": "ISC",
   "dependencies": {
