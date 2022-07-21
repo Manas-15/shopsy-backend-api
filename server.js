@@ -37,7 +37,8 @@ app.use(
 require("./app/routes/user.routes")(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || 8000;
+// const PORT = process.env.PORT || 8000;
+const PORT = "https://shopsy-backend-api.herokuapp.com/";
 
 app.get("/", (req, res) => {
   res.send("Hello this is shopsy backend API endpoint");
