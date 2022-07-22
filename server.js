@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const { connect } = require("http2");
 const app = express();
-
 const db = require("./app/models");
+const apiData = require("./data.json");
 
 var options = {
   keepAlive: true,
@@ -37,11 +37,15 @@ app.use(
 require("./app/routes/user.routes")(app);
 
 // set port, listen for requests
-// const PORT = process.env.PORT || 8000;
-const PORT = "https://shopsy-backend-api.herokuapp.com/";
+const PORT = process.env.PORT || 8000;
+// const PORT = "https://shopsy-backend-api.herokuapp.com/";
 
 app.get("/", (req, res) => {
   res.send("Hello this is shopsy backend API endpoint");
+});
+
+app.get("/service", (req, res) => {
+  res.send(apiData);
 });
 
 app.listen(PORT, () => {
