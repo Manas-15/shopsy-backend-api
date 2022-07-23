@@ -2,9 +2,10 @@
   "name": "clientapi",
   "version": "1.0.0",
   "description": "User should be able to register with username and password and upload read write delete the file upload",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js",
+    "test": "echo\"Error: no test specified\"&& exit 1"
   },
   "engines": {
     "node": "16.13.0"
