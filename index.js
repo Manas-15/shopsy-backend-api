@@ -37,7 +37,7 @@ app.use(
 require("./app/routes/user.routes")(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || 8000;
+const port = process.env.PORT || 8000;
 // const PORT = "https://shopsy-backend-api.herokuapp.com/";
 
 app.get("/", (req, res) => {
@@ -48,6 +48,6 @@ app.get("/service", (req, res) => {
   res.send(apiData);
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}.`);
 });
