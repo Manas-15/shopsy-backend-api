@@ -1,7 +1,7 @@
 {
   "name": "clientapi",
   "version": "1.0.0",
-  "description": "User should be able to register with username and password and upload read write delete the file upload",
+  "description": "User should be able to register with your username and password and upload read write delete the file upload",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
